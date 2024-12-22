@@ -1,8 +1,11 @@
 import './globals.css'
+import { Inter } from 'next/font/google'
+
+const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Wallhaven Proxy',
-  description: 'A proxy for wallhaven.cc',
+  description: 'A proxy for Wallhaven',
 }
 
 export default function RootLayout({
@@ -12,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={inter.className}>{children}</body>
     </html>
   )
 }
