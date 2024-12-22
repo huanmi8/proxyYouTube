@@ -5,7 +5,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Wallhaven Proxy',
-  description: 'A proxy for Wallhaven',
+  description: 'A proxy service for Wallhaven',
 }
 
 export default function RootLayout({
